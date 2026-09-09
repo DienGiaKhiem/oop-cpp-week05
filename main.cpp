@@ -50,18 +50,17 @@ int main()
             }
         }
 
-        // ==== BƯỚC 5: ĐẾM HỌC SINH ĐẬU / TRƯỢT ====
         int passed = 0;
         int failed = 0;
         for(int i = 1; i <= student; i++)
         {
             if(score[i] >= 5) 
             {
-                passed = passed + 1; // Tăng số lượng đậu lên 1
+                passed = passed + 1;
             }
             else 
             {
-                failed = failed + 1; // Tăng số lượng trượt lên 1
+                failed = failed + 1; 
             }
         }
         cout << "\n===== STATISTICS =====" << endl;
@@ -69,19 +68,18 @@ int main()
         cout << "Failed : " << failed << " students" << endl;
 
 
-        // ==== BƯỚC 6: TÌM ĐIỂM CAO NHẤT VÀ THẤP NHẤT ====
-        double highest = score[1]; // Tạm tính học sinh thứ nhất cao nhất
-        double lowest = score[1];  // Tạm tính học sinh thứ nhất thấp nhất
+        double highest = score[1]; 
+        double lowest = score[1];  
 
         for(int i = 1; i <= student; i++)
         {
             if(score[i] > highest) 
             {
-                highest = score[i]; // Cập nhật lại nếu tìm thấy điểm cao hơn
+                highest = score[i]; 
             }
             if(score[i] < lowest) 
             {
-                lowest = score[i];  // Cập nhật lại nếu tìm thấy điểm thấp hơn
+                lowest = score[i];  
             }
         }
         cout << "\n===== EXTREMES =====" << endl;
@@ -89,7 +87,6 @@ int main()
         cout << "Lowest score : " << lowest << endl;
 
 
-        // ==== BƯỚC 7: PHÂN LOẠI HỌC LỰC ====
         cout << "\n===== CLASSIFICATION =====" << endl;
         for(int i = 1; i <= student; i++)
         {
