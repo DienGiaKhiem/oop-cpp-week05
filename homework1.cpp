@@ -22,8 +22,8 @@ int main() {
         cout << "Flower " << (i + 1) << ":\n";
         cout << "  Name: "; cin >> arr[i].name;
         
-        do { cout << "  Price (>0): "; cin >> arr[i].price; } while (arr[i].price <= 0);
-        do { cout << "  Quantity (>=0): "; cin >> arr[i].qty; } while (arr[i].qty < 0);
+        do { cout << "  Price : "; cin >> arr[i].price; } while (arr[i].price <= 0);
+        do { cout << "  Quantity : "; cin >> arr[i].qty; } while (arr[i].qty < 0);
         
         cout << "  Type: "; cin >> arr[i].type;
     }
